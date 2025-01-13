@@ -18,5 +18,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution]()
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/blog-preview-card-1IQfKVbkt3)
 - Live Site URL: [GitHub Pages entry](https://rkrhlikar.github.io/frontend-mentor/002-blog-preview-card/)
