@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <style>
+    @font-face {
+      font-family: Figtree;
+      src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    :root {
+      --yellow: #f4d04e;
+      --gray-950: #111111;
+      --gray-500: #6b6b6b;
+
+      font-family: Figtree; 
+      color: var(--gray-950);
+      line-height: 150%;
+    }
+
+    body {
+      margin: 0;
+      width: 100%;
+      min-height: 100vh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      background: var(--yellow);
+    }
+
+    main {
+      flex-grow: 1;
+
+      display: grid;
+      place-items: center;
+
+      padding: 1.5rem;
+    }
+
+    article {
+      max-width: 384px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+
+      border-radius: 1.25rem;
+      border: 1px solid var(--gray-950);
+      box-shadow: 0.5rem 0.5rem black;
+
+      padding: 1.5rem;
+
+      background: white;
+
+      * {
+        margin: 0;
+      }
+
+      img {
+        height: 200px;
+        width: 100%;
+        margin-bottom: 0.75rem;
+
+        border-radius: 0.625rem;
+
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .tag {
+        align-self: flex-start;
+
+        border-radius: 0.25rem;
+
+        padding: 0.25rem 0.75rem;
+
+        background: var(--yellow);
+
+        /* Grow font-size from min to max between viewport widths 380px - 420px */
+        font-size: clamp(0.75rem, calc(0.75rem + 5 * (1vw - 3.8px)), 0.875rem);
+        font-weight: bold;
+      }
+
+      .publish_date {
+        /* Grow font-size from min to max between viewport widths 380px - 420px */
+        font-size: clamp(0.75rem, calc(0.75rem + 5 * (1vw - 3.8px)), 0.875rem);
+      }
+
+      h2 {
+        font-weight: 800;
+        /* Grow font-size from min to max between viewport widths 380px - 420px */
+        font-size: clamp(1.25rem, calc(1.25rem + 10 * (1vw - 3.8px)), 1.5rem);
+      }
+
+      &:hover h2,
+      &:focus h2 {
+        color: var(--yellow);
+      }
+
+      p {
+        color: var(--gray-500);
+        /* Grow font-size from min to max between viewport widths 380px - 420px */
+        font-size: clamp(0.875rem, calc(0.875rem + 5 * (1vw - 3.8px)), 1rem);
+      }
+
+      .author {
+        margin-top: 0.75rem;
+
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        font-weight: bold;
+        font-size: 0.825rem;
+
+        &::before {
+          width: 2rem;
+          height: 2rem;
+
+          display: inline-block;
+
+          background-image: url(./assets/images/image-avatar.webp);
+          background-size: contain;
+
+          content: "";
+        }
+      }
+    }
+
+    footer {
+      width: 100%;
+
+      padding: 0.5rem 2rem;
+
+      font-size: 0.75rem;
+      text-align: center;
+      line-height: 130%;
+    }
+
+    footer a {
+      color: var(--gray-500);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <img src="./assets/images/illustration-article.svg" alt="" />
+
+      <div class="tag">Learning</div>
+
+      <div class="publish_date">Published 21 Dec 2023</div>
+
+      <h2>HTML & CSS foundations</h2>
+
+      <p>
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </p>
+
+      <div class="author">Greg Hooper</div>
+    </article>
+  </main>
+  
+  <footer>
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://rkrhlikar.github.io/frontend-mentor/">Rok Krhlikar</a>.
+  </footer>
+</body>
+</html>
