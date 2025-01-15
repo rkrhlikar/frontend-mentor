@@ -18,5 +18,5 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor solution]()
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/social-links-profile-ncJH-g9Xoq)
 - Live Site URL: [GitHub Pages entry](https://rkrhlikar.github.io/frontend-mentor/003-social-links-profile/)
